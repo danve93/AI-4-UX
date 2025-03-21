@@ -1,4 +1,4 @@
-# UX4AI - Data Cleaning and Analysis Repository
+# AI-4-UX - Data Cleaning and Analysis Repository
 
 This repository contains a collection of Python scripts and CSV files used for data cleaning, transformation, and statistical analysis. The workflow includes preprocessing open-ended responses, normalizing data, computing statistical measures, and generating correlation matrices.
 
