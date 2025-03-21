@@ -5,20 +5,23 @@ This repository contains a collection of Python scripts and CSV files used for d
 ## Repository Structure
 
 ### **Data Cleaning Scripts**
-- **`clean_open.py`** – Cleans open-ended responses by merging multiline answers, removing unwanted values, and formatting the text.
 - **`cleanup.py`** – Cleans and processes structured data, ensuring uniform column names and removing unnecessary entries.
-- **`convert_to_numbers.py`** – Converts categorical survey responses into numerical values for analysis.
 - **`scale_mappings.py`** – Maps scale-based responses to numerical values.
+- **`convert_to_numbers.py`** – Converts categorical survey responses into numerical values for analysis.
 
 ### **Statistical Analysis Scripts**
 - **`shapiro_wilk.py`** – Performs a Shapiro-Wilk test to assess normality in the dataset.
 - **`spearman.py`** – Computes Spearman’s correlation and generates a heatmap visualization.
 - **`skewness_kurtosis.py`** – Computes skewness and kurtosis values for evaluating data distribution.
 - **`iqr_median.py`** – Computes median and interquartile range (IQR) to understand data spread.
-- **`feature.py`** – Extracts key features from the dataset for further statistical analysis.
 
-### **Translation Script**
+### **Qualitative Script**
+- **`clean_open.py`** – Cleans open-ended responses by merging multiline answers, removing unwanted values, and formatting the text.
 - **`translate.py`** – Translates open-ended responses from French to English using `deep_translator`.
+- **`feature.py`** – Extracts key features from the dataset for further statistical analysis.1
+- **`themes.py`** – Extracts key themes from the dataset for further statistical analysis.1
+
+1 **`feature.py`** and **`themes.py`** should not be considered reliable as the extraction is limited to the keywords set in the script. Please avail human analysis for features and themes.
 
 ### **CSV Data Files**
 - **`open_ended.csv`** – Raw open-ended responses before cleaning.
@@ -50,6 +53,8 @@ This repository contains a collection of Python scripts and CSV files used for d
 3. **Preprocessing Open-Ended Responses**
    - Run `clean_open.py` to clean open-ended responses.
    - Run `translate.py` to translate responses into English.
+   - Run `feature.py` to extract the key features.
+   - Run `themes.py` to extract the key themes.
 
 ## Requirements
 To run these scripts, install the required dependencies using:
